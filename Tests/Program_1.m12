@@ -1,0 +1,20 @@
+#Program _0PG;
+Variable Integer_2 _0AA, _1AB, _2BC, _3MN;
+
+Start
+
+Read (_0AA);
+Read (_1AB);
+Write (_0AA ++ _1AB);
+Write (_0AA -- _1AB);
+Write (_0AA ** _1AB);
+Write (_0AA Div _1AB);
+Write (_0AA Mod _1AB);
+
+(_0AA -- _1AB) ** 10 ++ (_0AA ++ _1AB) Div 10 -> _2BC;
+_2BC ++ _2BC Mod 10 -> _3MN;
+
+Write (_2BC);
+Write (_3MN);
+
+Stop
