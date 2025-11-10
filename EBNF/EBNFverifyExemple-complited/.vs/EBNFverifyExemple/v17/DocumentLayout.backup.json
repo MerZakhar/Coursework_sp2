@@ -1,0 +1,85 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\one_file__x86_Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|solutionrelative:one_file__x86_Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file1.m12||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|solutionrelative:file1.m12||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file3.m12||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|solutionrelative:file3.m12||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file2.m12||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4A247F6A-CD2A-4A0F-8925-9B11ED812C65}|EBNFverifyExemple.vcxproj|solutionrelative:file2.m12||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "file3.m12",
+              "DocumentMoniker": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file3.m12",
+              "RelativeDocumentMoniker": "file3.m12",
+              "ToolTip": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file3.m12",
+              "RelativeToolTip": "file3.m12",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-24T06:21:48.604Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "one_file__x86_Debug.cpp",
+              "DocumentMoniker": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\one_file__x86_Debug.cpp",
+              "RelativeDocumentMoniker": "one_file__x86_Debug.cpp",
+              "ToolTip": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\one_file__x86_Debug.cpp",
+              "RelativeToolTip": "one_file__x86_Debug.cpp",
+              "ViewState": "AgIAAIQAAAAAAAAAAAAwwKEAAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-09-26T07:44:52.598Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "file2.m12",
+              "DocumentMoniker": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file2.m12",
+              "RelativeDocumentMoniker": "file2.m12",
+              "ToolTip": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file2.m12",
+              "RelativeToolTip": "file2.m12",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-24T07:11:09.364Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file1.m12",
+              "DocumentMoniker": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file1.m12",
+              "RelativeDocumentMoniker": "file1.m12",
+              "ToolTip": "D:\\Desktop\\\u0421\u041F_2\\EBNF\\EBNFverifyExemple-new-exemple\\file1.m12",
+              "RelativeToolTip": "file1.m12",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-10-28T20:09:51.205Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
