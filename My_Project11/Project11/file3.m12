@@ -1,0 +1,19 @@
+#Program _2PG;
+
+Variable Integer_2 _0AA, _0BB, _0CC, _0II, _0JJ;
+
+Start
+
+Read (_0AA);
+Read (_0BB);
+
+For _0BB -> _0II Downto _0AA Do
+	Write (_0II ** _0II);
+
+0 -> _0CC;
+For _0AA -> _0II Downto 1 Do
+	For _0BB -> _0JJ Downto 1 Do
+		_0CC ++ 1 -> _0CC;
+Write (_0CC);
+
+Stop

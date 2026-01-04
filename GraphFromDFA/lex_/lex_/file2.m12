@@ -1,0 +1,42 @@
+#Program _1PG;
+
+Variable Integer_2 _0AA, _0BB, _0CC;
+
+Start
+
+Read (_0AA);
+Read (_0BB);
+Read (_0CC);
+If _0AA > _0BB {
+	If _0AA > _0CC {
+		Write (_0AA);
+	} Else {
+		Write (_0CC);
+	}
+} Else {
+	If _0BB > _0CC {
+		Write (_0BB);
+	} Else {
+		Write (_0CC);
+	}
+}
+
+If _0AA == _0BB & _0AA == _0CC & _0BB == _0CC {
+	Write (1);
+} Else {
+	Write (0);
+}
+
+If _0AA < 0 | _0BB < 0 | _0CC < 0 {
+	Write (--1);
+} Else {
+	Write (0);
+}
+
+If !(_0AA < (_0BB ++ _0CC)) {
+	Write (10);
+} Else {
+	Write (0);
+}
+
+Stop
