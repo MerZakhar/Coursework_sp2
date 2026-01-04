@@ -131,6 +131,10 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="dfa.hpp" />
+    <ClInclude Include="file1.hpp" />
+    <ClInclude Include="file2.hpp" />
+    <ClInclude Include="file3.hpp" />
+    <ClInclude Include="file4.hpp" />
     <ClInclude Include="matcher_by_dfa.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

@@ -7,18 +7,12 @@ Start
 Read (_0AA);
 Read (_0BB);
 Read (_0CC);
-If _0AA > _0BB {
-	If _0AA > _0CC {
-		Write (_0AA);
-	} Else {
-		Write (_0CC);
-	}
+If _0AA > _0BB & _0AA > _0BB {
+	Write (_0AA);
+} Else If _0BB > _0AA & _0BB > _0CC {
+	Write (_0BB);
 } Else {
-	If _0BB > _0CC {
-		Write (_0BB);
-	} Else {
-		Write (_0CC);
-	}
+	Write (_0CC);
 }
 
 If _0AA == _0BB & _0AA == _0CC & _0BB == _0CC {
@@ -38,5 +32,5 @@ If !(_0AA < (_0BB ++ _0CC)) {
 } Else {
 	Write (0);
 }
-
+// comment
 Stop
