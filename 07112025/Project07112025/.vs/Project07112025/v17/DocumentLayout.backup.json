@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Desktop\\\u0421\u041F_2\\Project07112025\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{DAFB71D7-26E4-4371-8F7D-A918D56DD125}|Project07112025.vcxproj|D:\\Desktop\\\u0421\u041F_2\\Project07112025\\one_file__x86_Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DAFB71D7-26E4-4371-8F7D-A918D56DD125}|Project07112025.vcxproj|solutionrelative:one_file__x86_Debug.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DAFB71D7-26E4-4371-8F7D-A918D56DD125}|Project07112025.vcxproj|D:\\Desktop\\\u0421\u041F_2\\Project07112025\\file1.m12||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{DAFB71D7-26E4-4371-8F7D-A918D56DD125}|Project07112025.vcxproj|solutionrelative:file1.m12||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "file1.m12",
+              "DocumentMoniker": "D:\\Desktop\\\u0421\u041F_2\\Project07112025\\file1.m12",
+              "RelativeDocumentMoniker": "file1.m12",
+              "ToolTip": "D:\\Desktop\\\u0421\u041F_2\\Project07112025\\file1.m12",
+              "RelativeToolTip": "file1.m12",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-11-07T11:50:03.312Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "one_file__x86_Debug.cpp",
+              "DocumentMoniker": "D:\\Desktop\\\u0421\u041F_2\\Project07112025\\one_file__x86_Debug.cpp",
+              "RelativeDocumentMoniker": "one_file__x86_Debug.cpp",
+              "ToolTip": "D:\\Desktop\\\u0421\u041F_2\\Project07112025\\one_file__x86_Debug.cpp",
+              "RelativeToolTip": "one_file__x86_Debug.cpp",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAAB0AAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-11-07T11:34:45.421Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

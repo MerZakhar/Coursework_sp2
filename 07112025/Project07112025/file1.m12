@@ -1,0 +1,21 @@
+#Program _0PG;
+
+Variable Integer_2 _0AA, _0BB, _0XX, _0YY;
+
+Start
+
+Read (_0AA);
+Read (_0BB);
+Write (_0AA ++ _0BB);
+Write (_0AA -- _0BB);
+Write (_0AA ** _0BB);
+Write (_0AA Div _0BB);
+Write (_0AA Mod _0BB);
+
+(_0AA -- _0BB) ** 10 ++ (_0AA ++ _0BB) Div 10 -> _0XX;
+_0XX ++ _0XX Mod 10 -> _0YY;
+
+Write (_0XX);
+Write (_0YY);
+
+Stop
