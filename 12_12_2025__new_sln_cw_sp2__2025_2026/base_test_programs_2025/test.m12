@@ -1,0 +1,22 @@
+#Program _0PG;
+
+Variable Integer_2 _0AA[999], _0SS, _0II, _0NN, _0XX, _0YY;
+
+Start
+
+Read (_0NN);
+
+0 -> _0SS;
+
+For _0NN -> _0II Downto 0 Do {
+	Read (_0XX);
+	_0XX -> _0AA[_0II];
+	If _0AA[_0II] > 1 {
+		_0SS ++ _0AA[_0II] -> _0SS;
+		Write (123);
+	}
+}
+
+Write (_0SS);
+
+Stop

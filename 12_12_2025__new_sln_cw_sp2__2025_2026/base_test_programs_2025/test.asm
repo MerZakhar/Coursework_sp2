@@ -143,9 +143,9 @@ done:
 
     ;";"
 
-    ;"4"
+    ;"16"
     add ecx, 4
-    mov eax, 000000004h
+    mov eax, 000000010h
     mov dword ptr [ecx], eax
 
     ;"Read"
@@ -169,27 +169,21 @@ done:
     add ecx, 24576 ; reset second stack
 
     ;";"
+
+    ;"0"
+    add ecx, 4
+    mov eax, 000000000h
+    mov dword ptr [ecx], eax
 
     ;"8"
     add ecx, 4
     mov eax, 000000008h
     mov dword ptr [ecx], eax
 
-    ;"Read"
-    mov eax, dword ptr[ecx]
-    mov edx, 000000047h
-    add edx, esi
-    push ecx
-    ;push ebx
-    push esi
-    push edi
-    call edx
-    pop edi
-    pop esi
-    ;pop ebx
-    pop ecx
+    ;"->"
     mov ebx, dword ptr[ecx]
-    sub ecx, 4
+    mov eax, dword ptr[ecx - 4]
+    sub ecx, 8
     add ebx, edi
     mov dword ptr [ebx], eax
     mov ecx, edi ; reset second stack
@@ -197,269 +191,14 @@ done:
 
     ;";"
 
-    ;"_0AA"
+    ;"For"
+
+    ;"_0NN"
     mov eax, edi
-    add eax, 000000004h
+    add eax, 000000010h
     mov eax, dword ptr[eax]
     add ecx, 4
     mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"++"
-    mov eax, dword ptr[ecx]
-    sub ecx, 4
-    add dword ptr[ecx], eax
-    mov eax, dword ptr[ecx]
-
-    ;"Write"
-    mov eax, dword ptr[ecx]
-    mov edx, 00000001Eh
-    add edx, esi
-    ;push ecx
-    ;push ebx
-    push esi
-    push edi
-    call edx
-    pop edi
-    pop esi
-    ;pop ebx
-    ;pop ecx
-    mov ecx, edi ; reset second stack
-    add ecx, 24576 ; reset second stack
-
-    ;";"
-
-    ;"_0AA"
-    mov eax, edi
-    add eax, 000000004h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"--"
-    mov eax, dword ptr[ecx]
-    sub ecx, 4
-    sub dword ptr[ecx], eax
-    mov eax, dword ptr[ecx]
-
-    ;"Write"
-    mov eax, dword ptr[ecx]
-    mov edx, 00000001Eh
-    add edx, esi
-    ;push ecx
-    ;push ebx
-    push esi
-    push edi
-    call edx
-    pop edi
-    pop esi
-    ;pop ebx
-    ;pop ecx
-    mov ecx, edi ; reset second stack
-    add ecx, 24576 ; reset second stack
-
-    ;";"
-
-    ;"_0AA"
-    mov eax, edi
-    add eax, 000000004h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"**"
-    mov eax, dword ptr[ecx - 4]
-    ;cdq
-    imul dword ptr [ecx]
-    sub ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"Write"
-    mov eax, dword ptr[ecx]
-    mov edx, 00000001Eh
-    add edx, esi
-    ;push ecx
-    ;push ebx
-    push esi
-    push edi
-    call edx
-    pop edi
-    pop esi
-    ;pop ebx
-    ;pop ecx
-    mov ecx, edi ; reset second stack
-    add ecx, 24576 ; reset second stack
-
-    ;";"
-
-    ;"_0AA"
-    mov eax, edi
-    add eax, 000000004h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"Div"
-    mov eax, dword ptr[ecx - 4]
-    cdq
-    idiv dword ptr [ecx]
-    sub ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"Write"
-    mov eax, dword ptr[ecx]
-    mov edx, 00000001Eh
-    add edx, esi
-    ;push ecx
-    ;push ebx
-    push esi
-    push edi
-    call edx
-    pop edi
-    pop esi
-    ;pop ebx
-    ;pop ecx
-    mov ecx, edi ; reset second stack
-    add ecx, 24576 ; reset second stack
-
-    ;";"
-
-    ;"_0AA"
-    mov eax, edi
-    add eax, 000000004h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"Mod"
-    mov eax, dword ptr[ecx - 4]
-    cdq
-    idiv dword ptr [ecx]
-    sub ecx, 4
-    mov eax, edx
-    mov dword ptr [ecx], eax
-
-    ;"Write"
-    mov eax, dword ptr[ecx]
-    mov edx, 00000001Eh
-    add edx, esi
-    ;push ecx
-    ;push ebx
-    push esi
-    push edi
-    call edx
-    pop edi
-    pop esi
-    ;pop ebx
-    ;pop ecx
-    mov ecx, edi ; reset second stack
-    add ecx, 24576 ; reset second stack
-
-    ;";"
-
-    ;"_0AA"
-    mov eax, edi
-    add eax, 000000004h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"--"
-    mov eax, dword ptr[ecx]
-    sub ecx, 4
-    sub dword ptr[ecx], eax
-    mov eax, dword ptr[ecx]
-
-    ;"10"
-    add ecx, 4
-    mov eax, 00000000Ah
-    mov dword ptr [ecx], eax
-
-    ;"**"
-    mov eax, dword ptr[ecx - 4]
-    ;cdq
-    imul dword ptr [ecx]
-    sub ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0AA"
-    mov eax, edi
-    add eax, 000000004h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"_0BB"
-    mov eax, edi
-    add eax, 000000008h
-    mov eax, dword ptr[eax]
-    add ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"++"
-    mov eax, dword ptr[ecx]
-    sub ecx, 4
-    add dword ptr[ecx], eax
-    mov eax, dword ptr[ecx]
-
-    ;"10"
-    add ecx, 4
-    mov eax, 00000000Ah
-    mov dword ptr [ecx], eax
-
-    ;"Div"
-    mov eax, dword ptr[ecx - 4]
-    cdq
-    idiv dword ptr [ecx]
-    sub ecx, 4
-    mov dword ptr [ecx], eax
-
-    ;"++"
-    mov eax, dword ptr[ecx]
-    sub ecx, 4
-    add dword ptr[ecx], eax
-    mov eax, dword ptr[ecx]
 
     ;"12"
     add ecx, 4
@@ -475,34 +214,155 @@ done:
     mov ecx, edi ; reset second stack
     add ecx, 24576 ; reset second stack
 
+    ;"Downto" (after "For")
+    inc dword ptr [ebx]
+    push ebx
+LABEL@AFTER_DOWNTO_00007FF76467B4A0:
+
+    ;"0"
+    add ecx, 4
+    mov eax, 000000000h
+    mov dword ptr [ecx], eax
+
+    ;"Do" (after "Downto" after "For")
+    mov ebx, dword ptr [esp]
+    cmp dword ptr [ebx], eax
+    jle LABEL@EXIT_FOR_00007FF76467A400
+    dec dword ptr [ebx]
+
+    ;"20"
+    add ecx, 4
+    mov eax, 000000014h
+    mov dword ptr [ecx], eax
+
+    ;"Read"
+    mov eax, dword ptr[ecx]
+    mov edx, 000000047h
+    add edx, esi
+    push ecx
+    ;push ebx
+    push esi
+    push edi
+    call edx
+    pop edi
+    pop esi
+    ;pop ebx
+    pop ecx
+    mov ebx, dword ptr[ecx]
+    sub ecx, 4
+    add ebx, edi
+    mov dword ptr [ebx], eax
+    mov ecx, edi ; reset second stack
+    add ecx, 24576 ; reset second stack
+
     ;";"
 
     ;"_0XX"
     mov eax, edi
-    add eax, 00000000Ch
+    add eax, 000000014h
     mov eax, dword ptr[eax]
     add ecx, 4
     mov dword ptr [ecx], eax
 
-    ;"_0XX"
+    ;"4"
+    add ecx, 4
+    mov eax, 000000004h
+    mov dword ptr [ecx], eax
+
+    ;"_0II"
     mov eax, edi
     add eax, 00000000Ch
     mov eax, dword ptr[eax]
     add ecx, 4
     mov dword ptr [ecx], eax
 
-    ;"10"
+    ;"INDEX"
+    mov eax, dword ptr[ecx]
+    imul eax, 128
+    sub ecx, 4
+    add dword ptr[ecx], eax
+    mov eax, dword ptr[ecx]
+
+    ;"->"
+    mov ebx, dword ptr[ecx]
+    mov eax, dword ptr[ecx - 4]
+    sub ecx, 8
+    add ebx, edi
+    mov dword ptr [ebx], eax
+    mov ecx, edi ; reset second stack
+    add ecx, 24576 ; reset second stack
+
+    ;";"
+
+    ;"If"
+
+    ;"4"
     add ecx, 4
-    mov eax, 00000000Ah
+    mov eax, 000000004h
     mov dword ptr [ecx], eax
 
-    ;"Mod"
-    mov eax, dword ptr[ecx - 4]
-    cdq
-    idiv dword ptr [ecx]
-    sub ecx, 4
-    mov eax, edx
+    ;"_0II"
+    mov eax, edi
+    add eax, 00000000Ch
+    mov eax, dword ptr[eax]
+    add ecx, 4
     mov dword ptr [ecx], eax
+
+    ;"INDEX_TO_VALUE"
+    mov eax, dword ptr[ecx]
+    mov ebx, dword ptr[ecx - 4]
+    imul eax, 128
+    sub ecx, 4
+    add ebx, edi
+    add ebx, eax
+    mov eax, dword ptr[ebx]
+    mov dword ptr[ecx], eax
+
+    ;"1"
+    add ecx, 4
+    mov eax, 000000001h
+    mov dword ptr [ecx], eax
+
+    ;">"
+    mov eax, dword ptr[ecx]
+    sub ecx, 4
+    cmp dword ptr[ecx], eax
+    setg al
+    and eax, 1
+    mov dword ptr[ecx], eax
+
+    ;after cond expresion (after "If")
+    cmp eax, 0
+    jz LABEL@AFTER_THEN_00007FF764680398
+
+    ;"_0SS"
+    mov eax, edi
+    add eax, 000000008h
+    mov eax, dword ptr[eax]
+    add ecx, 4
+    mov dword ptr [ecx], eax
+
+    ;"4"
+    add ecx, 4
+    mov eax, 000000004h
+    mov dword ptr [ecx], eax
+
+    ;"_0II"
+    mov eax, edi
+    add eax, 00000000Ch
+    mov eax, dword ptr[eax]
+    add ecx, 4
+    mov dword ptr [ecx], eax
+
+    ;"INDEX_TO_VALUE"
+    mov eax, dword ptr[ecx]
+    mov ebx, dword ptr[ecx - 4]
+    imul eax, 128
+    sub ecx, 4
+    add ebx, edi
+    add ebx, eax
+    mov eax, dword ptr[ebx]
+    mov dword ptr[ecx], eax
 
     ;"++"
     mov eax, dword ptr[ecx]
@@ -510,9 +370,9 @@ done:
     add dword ptr[ecx], eax
     mov eax, dword ptr[ecx]
 
-    ;"16"
+    ;"8"
     add ecx, 4
-    mov eax, 000000010h
+    mov eax, 000000008h
     mov dword ptr [ecx], eax
 
     ;"->"
@@ -526,11 +386,9 @@ done:
 
     ;";"
 
-    ;"_0XX"
-    mov eax, edi
-    add eax, 00000000Ch
-    mov eax, dword ptr[eax]
+    ;"123"
     add ecx, 4
+    mov eax, 00000007Bh
     mov dword ptr [ecx], eax
 
     ;"Write"
@@ -551,9 +409,18 @@ done:
 
     ;";"
 
-    ;"_0YY"
+    ;";" (after "then"-part of If-operator)
+    mov eax, 1
+LABEL@AFTER_THEN_00007FF764680398:
+
+    ;"}" (after "For")
+    jmp LABEL@AFTER_DOWNTO_00007FF76467B4A0
+LABEL@EXIT_FOR_00007FF76467A400:
+    add esp, 4; add esp, 8
+
+    ;"_0SS"
     mov eax, edi
-    add eax, 000000010h
+    add eax, 000000008h
     mov eax, dword ptr[eax]
     add ecx, 4
     mov dword ptr [ecx], eax

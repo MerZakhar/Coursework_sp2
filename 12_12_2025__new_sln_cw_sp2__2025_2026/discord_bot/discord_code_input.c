@@ -53,8 +53,8 @@ int main() {
     //"_0BB"
     opStack[++opStackIndex] = opTemp = data[0x00000008];
 
-    //"++"
-    opTemp = opStack[opStackIndex - 1] += opStack[opStackIndex]; --opStackIndex;
+    //"--"
+    opTemp = opStack[opStackIndex - 1] -= opStack[opStackIndex]; --opStackIndex;
 
     //"Write"
     (void)printf("%d\r\n", opTemp = opStack[opStackIndex]), opStackIndex = 0;
@@ -67,8 +67,8 @@ int main() {
     //"_0BB"
     opStack[++opStackIndex] = opTemp = data[0x00000008];
 
-    //"++"
-    opTemp = opStack[opStackIndex - 1] += opStack[opStackIndex]; --opStackIndex;
+    //"**"
+    opTemp = opStack[opStackIndex - 1] *= opStack[opStackIndex]; --opStackIndex;
 
     //"Write"
     (void)printf("%d\r\n", opTemp = opStack[opStackIndex]), opStackIndex = 0;
@@ -81,8 +81,8 @@ int main() {
     //"_0BB"
     opStack[++opStackIndex] = opTemp = data[0x00000008];
 
-    //"++"
-    opTemp = opStack[opStackIndex - 1] += opStack[opStackIndex]; --opStackIndex;
+    //"Div"
+    opTemp = opStack[opStackIndex - 1] /= opStack[opStackIndex]; --opStackIndex;
 
     //"Write"
     (void)printf("%d\r\n", opTemp = opStack[opStackIndex]), opStackIndex = 0;
@@ -95,8 +95,8 @@ int main() {
     //"_0BB"
     opStack[++opStackIndex] = opTemp = data[0x00000008];
 
-    //"++"
-    opTemp = opStack[opStackIndex - 1] += opStack[opStackIndex]; --opStackIndex;
+    //"Mod"
+    opTemp = opStack[opStackIndex - 1] %= opStack[opStackIndex]; --opStackIndex;
 
     //"Write"
     (void)printf("%d\r\n", opTemp = opStack[opStackIndex]), opStackIndex = 0;
